@@ -119,7 +119,7 @@ a:hover {
   color: var(--ink);
 }
 
-/* Hero — one composition, brand-first */
+/* Hero: one composition, brand-first */
 
 .hero {
   position: relative;
@@ -346,6 +346,63 @@ a:hover {
 
 .timeline .what {
   color: var(--muted);
+}
+
+.aside {
+  margin: 3rem 0 0;
+  max-width: 40rem;
+  padding: 1.25rem 0 0;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.aside strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.connect-inner {
+  max-width: 36rem;
+}
+
+.connect-grid {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.connect-primary {
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.connect-primary:hover {
+  color: var(--emerald);
+}
+
+.connect-secondary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.65rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.connect-secondary a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.connect-secondary a:hover {
+  color: var(--emerald);
+}
+
+.connect-secondary .sep {
+  color: var(--faint);
 }
 
 .links {

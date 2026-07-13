@@ -3,7 +3,7 @@
 Personal site for **Arron Hyman**, Founder & CEO of Lesuto Technologies.
 
 - Motto: *Let's Succeed Together*
-- Stack: static HTML/CSS + nginx on **Cloud Run** (`min-instances=0` — free when idle)
+- Stack: static HTML/CSS + nginx on **Cloud Run** (`min-instances=0`, free when idle)
 - Domain: `arronhyman.com` (GoDaddy registrar, Route53 DNS; Google Workspace MX unchanged)
 
 ## Local preview
