@@ -26,6 +26,17 @@ docker run --rm -p 8080:8080 arron-hyman
 - Free when idle (`min-instances=0`). No global LB.
 - Google Workspace MX and `et.arronhyman.com` left unchanged
 
+## Next: Connect + SDK on this site
+
+Once Arron's Lesuto Connect meeting type exists on the Lesuto Technologies channel:
+
+1. Create a public meeting type in Lesuto Connect (Seller or admin).
+2. Replace `https://meet.lesuto.com/` links on this site with the personal URL (`https://meet.lesuto.com/{slug}`).
+3. Optional: embed the Connect booking module via Chameleon SDK with the merchant site key.
+4. Livestream / go-live: embed `livestream-player` (or Hub live) with the store's channel token / site key after the Arron Hyman merchant store is published.
+
+Contact forms can POST through the gateway once a small serverless endpoint or SDK form module is wired to that merchant store. Until then, mailto + Connect booking is the path.
+
 ## Deploy
 
 1. Add GitHub secrets on this repo:

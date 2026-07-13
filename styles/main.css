@@ -100,6 +100,24 @@ a:hover {
   color: var(--ink);
   text-decoration: none;
   letter-spacing: 0.01em;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45rem 0.65rem;
+}
+
+.nav-tagline {
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.nav-tagline::before {
+  content: "- ";
+  font-style: normal;
+  color: var(--faint);
 }
 
 .site-nav nav {
@@ -181,8 +199,16 @@ a:hover {
   letter-spacing: -0.02em;
 }
 
+.degree {
+  margin: 0.65rem 0 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+
 .role {
-  margin: 1rem 0 0;
+  margin: 0.55rem 0 0;
   font-size: 1.05rem;
   font-weight: 500;
   color: var(--muted);
@@ -394,6 +420,32 @@ a:hover {
 .aside strong {
   color: var(--ink);
   font-weight: 600;
+}
+
+.speak-topics {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.65rem;
+  max-width: 36rem;
+}
+
+.speak-topics li {
+  padding-left: 1.1rem;
+  position: relative;
+  color: var(--muted);
+}
+
+.speak-topics li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--emerald);
 }
 
 .connect-inner {
