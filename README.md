@@ -21,9 +21,9 @@ docker run --rm -p 8080:8080 arron-hyman
 
 ## Live
 
-- Cloud Run: https://arron-hyman-xbscrs6jja-uw.a.run.app
-- Custom domain (GCP global LB `136.68.12.116`): https://arronhyman.com / https://www.arronhyman.com
-- Managed SSL cert provisions after DNS propagates (can take up to ~60 minutes)
+- Cloud Run (direct, no load balancer): https://arron-hyman-xbscrs6jja-uw.a.run.app
+- Custom domain via Cloud Run domain mapping: https://arronhyman.com / https://www.arronhyman.com
+- Free when idle (`min-instances=0`). No global LB.
 - Google Workspace MX and `et.arronhyman.com` left unchanged
 
 ## Deploy
