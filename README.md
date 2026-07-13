@@ -19,6 +19,13 @@ docker run --rm -p 8080:8080 arron-hyman
 # open http://localhost:8080
 ```
 
+## Live
+
+- Cloud Run: https://arron-hyman-xbscrs6jja-uw.a.run.app
+- Custom domain (GCP global LB `136.68.12.116`): https://arronhyman.com / https://www.arronhyman.com
+- Managed SSL cert provisions after DNS propagates (can take up to ~60 minutes)
+- Google Workspace MX and `et.arronhyman.com` left unchanged
+
 ## Deploy
 
 1. Add GitHub secrets on this repo:
