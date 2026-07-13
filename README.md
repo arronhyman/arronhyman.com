@@ -9,10 +9,11 @@ Personal site for **Arron Hyman**, Founder & CEO of Lesuto Technologies.
 ## Local preview
 
 ```bash
-# Option A: Python
 python3 -m http.server 4173
+# open http://localhost:4173
+```
 
-# Option B: Docker
+```bash
 docker build -t arron-hyman .
 docker run --rm -p 8080:8080 arron-hyman
 # open http://localhost:8080

@@ -4,8 +4,8 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY index.html /usr/share/nginx/html/index.html
 COPY robots.txt /usr/share/nginx/html/robots.txt
 COPY styles /usr/share/nginx/html/styles
-COPY public/arron.jpg /usr/share/nginx/html/arron.jpg
-COPY public/favicon.svg /usr/share/nginx/html/favicon.svg
+COPY arron.jpg /usr/share/nginx/html/arron.jpg
+COPY favicon.svg /usr/share/nginx/html/favicon.svg
 
 EXPOSE 8080
 
