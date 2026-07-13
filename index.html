@@ -139,6 +139,7 @@
       <div class="hero-copy">
         <p class="eyebrow reveal">Austin, Texas · Nomadic</p>
         <h1 class="reveal reveal-delay-1">Arron Hyman</h1>
+        <p class="name-sub reveal reveal-delay-1">Contact on this page is powered by the Lesuto SDK</p>
         <p class="degree reveal reveal-delay-1">B.S. Computer Information Systems</p>
         <p class="role reveal reveal-delay-2">Founder &amp; CEO, Lesuto Technologies</p>
         <p class="tagline reveal reveal-delay-3"><em>Let's Succeed Together</em></p>
@@ -294,24 +295,22 @@
         </ul>
         <div class="hero-actions reveal reveal-delay-4" style="margin-top: 2rem;">
           <a class="btn btn-primary" href="mailto:arron@lesuto.com?subject=Speaking%20invitation%20-%20Arron%20Hyman">Invite me to speak</a>
-          <a class="btn btn-ghost" href="https://meet.lesuto.com/" target="_blank" rel="noopener noreferrer">Book a conversation</a>
+          <a class="btn btn-ghost" href="https://meet.arronhyman.com/" target="_blank" rel="noopener noreferrer">Book a conversation</a>
         </div>
       </div>
     </section>
 
     <section id="connect" class="section section-connect">
-      <div class="section-inner connect-inner">
+      <div class="section-inner connect-inner connect-inner-wide">
         <p class="eyebrow reveal">Connect</p>
         <h2 class="reveal reveal-delay-1">Let's succeed together</h2>
         <p class="section-lede reveal reveal-delay-2">
-          Partnerships, press, speaking, or a direct conversation. Email is the fastest path;
-          book a slot when you want time on the calendar.
+          Partnerships, press, speaking, or a direct conversation.
+          Send a message, or grab time on the calendar.
         </p>
         <div class="connect-grid reveal reveal-delay-3">
           <a class="connect-primary" href="mailto:arron@lesuto.com">arron@lesuto.com</a>
           <div class="connect-secondary">
-            <a href="https://meet.lesuto.com/" target="_blank" rel="noopener noreferrer">meet.lesuto.com</a>
-            <span class="sep" aria-hidden="true">·</span>
             <a href="https://www.linkedin.com/in/arronhyman/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <span class="sep" aria-hidden="true">·</span>
             <a href="https://www.instagram.com/lesutoandtravel" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -319,12 +318,50 @@
             <a href="https://www.lesuto.com/" target="_blank" rel="noopener noreferrer">Lesuto</a>
           </div>
         </div>
+
+        <div class="connect-modules reveal reveal-delay-4">
+          <div class="connect-module">
+            <h3 class="connect-module-title">Send a message</h3>
+            <div
+              class="chameleon-mount chameleon-mount-form"
+              data-chameleon="support-form"
+              data-instance="inst_mrj8iogc_dvaf8ui6"
+              data-show-order="false"
+            ></div>
+          </div>
+          <aside class="connect-module book-card">
+            <h3 class="connect-module-title">Book a conversation</h3>
+            <p class="book-card-copy">
+              Pick a time that works. Scheduling runs on Lesuto Connect.
+            </p>
+            <a
+              class="btn btn-primary book-card-cta"
+              href="https://meet.arronhyman.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Open calendar</a>
+          </aside>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="year"></span> Arron Hyman. Let's Succeed Together.</p>
+    <p class="footer-copy">© <span id="year"></span> Arron Hyman. Let's Succeed Together.</p>
+    <a
+      class="powered-pill"
+      href="https://www.lesuto.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Powered by
+      <img src="https://www.lesuto.com/icon.png" alt="" width="14" height="14" />
+      <span class="powered-pill-brand">Lesuto</span>
+    </a>
+    <p class="footer-sdk-note">
+      The message form embeds the Lesuto SDK. Scheduling opens Lesuto Connect.
+      Same toolkit merchants put on their own sites.
+    </p>
   </footer>
 
   <script>
@@ -344,5 +381,10 @@
       reveals.forEach((el) => el.classList.add('is-visible'));
     }
   </script>
+  <script
+    src="https://sdk.lesuto.com/v2/chameleon.js"
+    data-site-key="ebaaa5a4b0311323039da767"
+    async
+  ></script>
 </body>
 </html>

@@ -199,6 +199,14 @@ a:hover {
   letter-spacing: -0.02em;
 }
 
+.name-sub {
+  margin: 0.7rem 0 0;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--faint);
+}
+
 .degree {
   margin: 0.65rem 0 0;
   font-size: 0.95rem;
@@ -452,10 +460,95 @@ a:hover {
   max-width: 36rem;
 }
 
+.connect-inner-wide {
+  max-width: 52rem;
+}
+
 .connect-grid {
   margin-top: 2rem;
   display: grid;
   gap: 1rem;
+}
+
+.connect-modules {
+  margin-top: 2.75rem;
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (min-width: 820px) {
+  .connect-modules {
+    grid-template-columns: 1.4fr 0.9fr;
+    gap: 2.25rem;
+  }
+}
+
+.connect-module-title {
+  margin: 0 0 1rem;
+  font-family: var(--serif);
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  font-weight: 400;
+  color: var(--ink);
+}
+
+.book-card {
+  padding: 1.5rem 1.4rem 1.6rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background:
+    linear-gradient(160deg, rgba(45, 212, 160, 0.08), transparent 55%),
+    var(--bg-alt);
+}
+
+.book-card .connect-module-title {
+  margin-bottom: 0.55rem;
+}
+
+.book-card-copy {
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.book-card-cta {
+  width: 100%;
+}
+
+.chameleon-mount-form {
+  /* Match personal site dark theme for SDK support-form */
+  --chameleon-primary: var(--emerald);
+  --chameleon-accent: var(--emerald);
+  --chameleon-fg: var(--ink);
+  --chameleon-muted: var(--muted);
+  --chameleon-border: var(--line);
+  --chameleon-input-bg: var(--bg-alt);
+  --chameleon-card-bg: transparent;
+  --chameleon-font: var(--sans);
+}
+
+/* Beat SDK autoTheme, which samples this page's pill .btn (999px) into --chameleon-radius */
+[data-chameleon="support-form"].chameleon-mount-form {
+  --chameleon-radius: 8px;
+}
+
+.chameleon-mount-form .chm-btn,
+.chameleon-mount-form button {
+  font-family: inherit;
+}
+
+.chameleon-mount-form input,
+.chameleon-mount-form select,
+.chameleon-mount-form textarea,
+.chameleon-mount-form button {
+  font-family: inherit;
+}
+
+.chameleon-mount-form input::placeholder,
+.chameleon-mount-form textarea::placeholder {
+  font-family: inherit;
+  color: var(--faint);
 }
 
 .connect-primary {
@@ -511,11 +604,72 @@ a:hover {
 }
 
 .site-footer {
-  padding: 2rem 1.5rem 3rem;
+  padding: 2.5rem 1.5rem 3.25rem;
   border-top: 1px solid var(--line);
   color: var(--faint);
   font-size: 0.9rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-copy {
+  margin: 0;
+}
+
+.powered-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  transition: border-color 0.2s var(--ease), color 0.2s var(--ease), background 0.2s var(--ease);
+}
+
+.powered-pill img {
+  border-radius: 3px;
+  opacity: 0.85;
+}
+
+.powered-pill-brand {
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff3399, #e879f9, #aa66ff, #33ccff, #33ffdd, #10b981, #ff3399);
+  background-size: 300% 100%;
+  animation: chameleonShine 40s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+@keyframes chameleonShine {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
+
+.powered-pill:hover {
+  border-color: rgba(45, 212, 160, 0.35);
+  color: var(--ink);
+  background: rgba(45, 212, 160, 0.08);
+}
+
+.footer-sdk-note {
+  margin: 0;
+  max-width: 28rem;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: var(--faint);
 }
 
 .site-footer p {
