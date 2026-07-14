@@ -439,41 +439,63 @@ a:hover {
   background: var(--emerald);
 }
 
-.connect-inner {
-  max-width: 36rem;
-}
-
-.connect-inner-wide {
-  max-width: 54rem;
-}
-
-.connect-welcome {
-  margin-top: 2.5rem;
+.connect-layout {
   display: grid;
   gap: 2.5rem;
   align-items: start;
 }
 
-@media (min-width: 860px) {
-  .connect-welcome {
-    grid-template-columns: 1.35fr 0.9fr;
-    gap: 3rem;
+@media (min-width: 960px) {
+  .connect-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    gap: 0 3rem;
+    align-items: stretch;
+  }
+
+  .connect-book {
+    padding-left: 3rem;
+    border-left: 1px solid var(--line);
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+    min-height: 100%;
+  }
+
+  .connect-book .chameleon-mount-booking,
+  .connect-book .chameleon-mount-booking iframe {
+    height: 100%;
+    min-height: 760px;
   }
 }
 
-.connect-form-panel {
-  padding: 0;
-}
-
-.connect-side {
+.connect-main {
   display: grid;
-  gap: 2rem;
-  padding-top: 0.15rem;
+  gap: 0;
+  align-content: start;
+  min-width: 0;
 }
 
-.connect-side-block {
+.connect-main .section-lede {
+  margin-top: 1.35rem;
+}
+
+.connect-direct {
+  margin-top: 2rem;
   display: grid;
   gap: 0.75rem;
+}
+
+.connect-form-block {
+  margin-top: 2.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.connect-book {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+  align-content: start;
 }
 
 .connect-kicker {
@@ -485,21 +507,35 @@ a:hover {
   color: var(--emerald);
 }
 
-.book-panel {
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--line);
+.inline-link {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: rgba(45, 212, 160, 0.45);
+  text-underline-offset: 0.15em;
 }
 
-.book-card-copy {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: var(--muted);
+.inline-link:hover {
+  color: var(--emerald);
+  text-decoration-color: var(--emerald);
 }
 
-.book-card-cta {
-  justify-self: start;
-  margin-top: 0.35rem;
+.chameleon-mount-booking {
+  margin-top: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #fff;
+  --chameleon-radius: 12px;
+  --chameleon-border: var(--line);
+}
+
+.chameleon-mount-booking iframe {
+  display: block;
+  width: 100%;
+  min-height: 720px;
+  height: 720px;
+  border: 0;
+  overflow: hidden;
 }
 
 .chameleon-mount-form {
@@ -512,7 +548,7 @@ a:hover {
   --chameleon-input-bg: var(--bg-alt);
   --chameleon-card-bg: transparent;
   --chameleon-font: var(--sans);
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 /* Beat SDK autoTheme, which samples this page's pill .btn (999px) into --chameleon-radius */
